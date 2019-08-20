@@ -295,7 +295,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'orLCv6PSOF-F2oPWvyRHgzkJDvN90C5IVNt15g4od8yTtD7N-6Py_5KOx7TRxO7r0DmR6-WnYg';
+$settings['hash_salt'] = 'IoFeuFXe4BqcAa5E3DKDNL6_Z7GphX0VeX6gqM_y6T9nuBCrkTSLU1AKSwvWh9FzQHIq8-_aAg';
 
 /**
  * Deployment identifier.
@@ -765,3 +765,13 @@ $config_directories['sync'] = 'sites/default/files/config_OvgLypdQ-Nvetzr8zsdB2W
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
+$databases['default']['default'] = array (
+  'database' => 'urban_test',
+  'username' => 'admin',
+  'password' => 'password',
+  'prefix' => '',
+  'host' => '127.0.0.1',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
